@@ -8,6 +8,107 @@
     <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <h1 class="hello-world">Hello, World!</h1>
+    <div class="viewport">
+      <header>
+<!--
+    Apparently the world is immensly divided on the proper tag for a textual logo. I have been working on this assignment with a reference open to
+    think about proper tag usage and for some reason I asked myself if a text logo should count as a header semantically and oh god the can of
+    worms googling that opened, oh god they are everywhere. According to a combination of hip SEO blogs and stack overflow posts the answer
+    is theoretically no as a logo is not really part of content flow, but the cargo cult says that h1 on a logo with low content pages
+    can attract the great google page ranking to pay more attention to your brand.
+
+    Looking at real world analogs was only slightly helpful, there was no standardization which is in reality most likely the meaningful answer to glean.
+    For posterity,
+      Bloomberg: First H1 is its logo text.
+      Washington Post: Reserves H1 for its front page story, uses H2 for other stories.
+      New York Times: No H1 tag at all that I can find, article titles use H2
+      Tampa Bay Times: No header tags at all, as far as the eye can see.
+    The standard organizations were interesting as well.
+      MDN: First H1 to the page header header
+      W3schools: First H1 to a content header
+      W3c: First H1 to logo... though on other pages sometimes the logo is wrapped in a p tag when its being shoved off to the side.
+        The logic I can scrape from this madness is the w3c homepage seems to have more dynamic content and no clear directional flow
+        for arbitrary visitors like a traditional newspaper or static reference manuals do, so the logo is a good a place as
+        any for the h1, but on pages which are just static lists of resources, the h1 takes a more obvious use.
+    Based on this absurd journey, I am going to go with a div.
+        Other sources:
+          https://wehavezeal.com/blog/web-development/2016/01/12/should-i-use-the-h1-tag-for-my-website-logo
+          https://www.fastcompany.com/3016894/should-your-tag-be-your-logo
+-->
+        <div class="logo">
+          <a href="/" alt="The Daily Kitteh">The Daily Kitteh</a>
+        </div>
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li><a href="#">Feral Adventures</a></li>
+            <li><a href="#">Kibble Kibbitz</a></li>
+            <li><a href="#">Tail Twitch Tales</a></li>
+            <li><a href="#">Sunny Window Reviews</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <aside class="kotd-card">
+          <img src="http://placekitten.com/300/300" alt="Spot" />
+          <h2 class="kotd-title">Kittehs of the Day</h2>
+          <ul class="kotd-list">
+            <li>Spot</li>
+            <li>Adeline</li>
+            <li>Perspex</li>
+            <li>Mr. Grumpy</li>
+          </ul>
+        </aside>
+        <article class="feature">
+          <h1 class="feature-title">Busy Kittehs Very Busy</h1>
+          <p class="feature-content">
+            Cat ipsum dolor sit amet, dolorem or aperiam dicta so eum. Tempor
+            eum officia dolores iure yet eius. Consequat lorem or fugit nesciunt
+            or laborum autem. Ab ab commodi and molestiae nesciunt yet ad. Irure
+            consectetur so veniam, sed. Dolore eu, pariatur. Dicta duis nostrud.
+            Quisquam amet quisquam yet esse nostrud for doloremque ea. Consequat
+            ratione yet cupidatat quasi for eiusmod and aliquip, yet tempora.
+            Proident sint. Ullam minima but aliquid dolor and tempora.
+            Perspiciatis dicta numquam and molestiae. Suscipit quam so nemo so
+            est adipisicing. Veniam eaque, cupidatat so quisquam excepteur
+            magnam. Incididunt veritatis or eu. Fugit incididunt so quasi for ex
+            so consequat yet quae. Voluptate. Ipsum totam. Perspiciatis. Sed
+            nulla error. Magnam do for laudantium. Cat ipsum dolor sit amet,
+            dolorem or aperiam dicta so eum. Tempor eum officia dolores iure yet
+            eius. Consequat lorem or fugit nesciunt or laborum autem. Ab ab
+            commodi and molestiae nesciunt yet ad. Irure consectetur so veniam,
+            sed. Dolore eu, pariatur. Dicta duis nostrud. Quisquam amet quisquam
+            yet esse nostrud for doloremque ea. Consequat ratione yet cupidatat
+            quasi for eiusmod and aliquip, yet tempora. Proident sint. Ullam
+            minima but aliquid dolor and tempora. Perspiciatis dicta numquam and
+            molestiae. Suscipit quam so nemo so est adipisicing. Veniam eaque,
+            cupidatat so quisquam excepteur magnam. Incididunt veritatis or eu.
+            Fugit incididunt so quasi for ex so consequat yet quae. Voluptate.
+            Ipsum totam. Perspiciatis. Sed nulla error. Magnam do for
+            laudantium.
+          </p>
+          <p class="feature-content">
+            Excepteur unde consequatur adipisci non, yet vel, eiusmod. Illo
+            corporis so ex so adipisicing. Suscipit tempor ipsum adipisci and
+            lorem duis. Enim eu so duis. Ea consequatur illo quo, nostrud magni
+            yet consequatur. Si deserunt. Magnam suscipit. Eos nulla and in
+            voluptas. Nisi nesciunt, for fugiat, cillum but fugit. Ipsam minim
+            or laudantium, but unde pariatur. Quasi illum officia yet cupidatat.
+            Aliqua est so labore but aut yet sint quae, for velitesse.
+            Exercitation occaecat but aspernatur perspiciatis error iste. Tempor
+            elit for consequat. Dolorem sit yet elit and esse. Incididunt odit
+            laboriosam sint so iure. Vitae.
+          </p>
+        </article>
+      </div>
+      <footer>
+        <nav class="footer-nav">
+          <ul class="nav-list">
+            <li><a href="">Subscribe</a></li>
+            <li><a href="">Pat the Editors</a></li>
+            <li><a href="">Send us Captnip</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>

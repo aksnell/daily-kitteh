@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'chomskyregular';
+  src: url('chomsky-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
-  font: 16px / 1 sans-serif;
+  font: 16px / 1 Open Sans;
+  --main-text-color: #415467;
 }
 
 html {
@@ -8,5 +18,107 @@ html {
 
 body {
   margin: 0;
-  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #008aa1;
+}
+
+.viewport {
+  margin: 0;
+  width: min-content;
+  background: white;
+}
+
+header,
+footer {
+  width: 100%;
+}
+
+.logo {
+  font-family: 'chomskyregular';
+  font-size: 4rem;
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.logo > a:link,
+a:visited,
+a:active {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+.header-nav {
+  background: #00bfd5;
+}
+
+.header-nav a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list > li {
+  display: inline;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.content {
+  display: flex;
+  margin: 1rem;
+}
+
+.feature {
+  margin: 1rem;
+  width: 50rem;
+  color: var(--main-text-color);
+}
+
+.feature-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.feature-content {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.kotd-card {
+  color: var(--main-text-color);
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #333333;
+}
+
+.kotd-title {
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.kotd-list {
+  margin-left: 1rem;
+}
+
+.kotd-list > li {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav {
+  margin: auto;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1px;
+  background: #d3d3d3;
 }
